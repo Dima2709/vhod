@@ -121,12 +121,9 @@ def robot():
             print('Отлично')
             a1 += 10
             vhod(0)
+        elif len(otvet) != 2:
+            print('Неправильный ответ, попробуйте еще раз')
+            robot()
         else:
             print('Неправильный ответ, попробуйте еще раз')
             robot()
-def gen_menu(arg):
-    print('привет')
-def registration(arg):
-    print('пока')
-
-vhod(0)
