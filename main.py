@@ -48,7 +48,7 @@ def vhod(arg):
         else:
             gen_menu(0)
 
-    if index >= 0:
+    if index != -1:
         pass1 = 0
         while pass1 == 0:
             password = input('Введите пароль ')
@@ -124,4 +124,9 @@ def robot():
         else:
             print('Неправильный ответ, попробуйте еще раз')
             robot()
+def gen_menu(arg):
+    print('привет')
+def registration(arg):
+    print('пока')
 
+vhod(0)
