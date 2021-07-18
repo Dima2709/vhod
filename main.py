@@ -36,7 +36,6 @@ def vhod(arg):
                           if shetchik == 4:
                               print('закончились попытки, подвердите, что вы не робот ')
                               robot()
-
     else:
         print(
             'Что-то пошло не так=) \n Если хотите войти, напишите - вход \n Если зарегистрироваться, напишите - регистрация \n Чтобы попасть в главное меню, напишите - меню ')
@@ -47,7 +46,6 @@ def vhod(arg):
             registration('registration')
         else:
             gen_menu(0)
-
     if index != -1:
         pass1 = 0
         while pass1 == 0:
@@ -88,7 +86,6 @@ def vhod(arg):
                                 shetchik2 += 1
                                 if shetchik2 == 4:
                                     robot()
-
                 elif otvet3 == 'меню':
                     pass1 += 10
                     gen_menu(0)
@@ -127,4 +124,4 @@ def robot():
         else:
             print('Неправильный ответ, попробуйте еще раз')
             robot()
-robot()
+vhod(0)
